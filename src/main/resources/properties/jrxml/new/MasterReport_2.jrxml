@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.19.1.final using JasperReports Library version 6.19.1-867c00bf88cd4d784d404379d6c05e1b419e8a4c  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="MasterReport_2" pageWidth="2950" pageHeight="842" columnWidth="2910" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" >
+    <property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+    <queryString>
+        <![CDATA[]]>
+    </queryString>
+    <field name="indentId" class="java.lang.String"/>
+    <field name="tripId" class="java.lang.String"/>
+    <field name="orderType" class="java.lang.String"/>
+    <field name="contractType" class="java.lang.String"/>
+    <field name="createdTime" class="java.lang.String"/>
+    <field name="transporterName" class="java.lang.String"/>
+    <field name="vehicleNumber" class="java.lang.String"/>
+    <field name="vehicleType" class="java.lang.String"/>
+    <field name="driverName" class="java.lang.String"/>
+    <field name="driverNumber" class="java.lang.String"/>
+    <field name="pickUpLocation" class="java.lang.String"/>
+    <field name="dropLocation" class="java.lang.String"/>
+    <field name="plannedPickUpDateAndTime" class="java.lang.String"/>
+    <field name="plannedDropDateAndTime" class="java.lang.String"/>
+    <field name="plannedWeight" class="java.lang.String"/>
+    <field name="plannedVolume" class="java.lang.String"/>
+    <field name="plannedNoOfPKGS" class="java.lang.String"/>
+    <field name="actualWeight" class="java.lang.String"/>
+    <field name="actualVolume" class="java.lang.String"/>
+    <field name="actualNoOfPKGS" class="java.lang.String"/>
+    <field name="lrNumber" class="java.lang.String"/>
+    <field name="lrTime" class="java.lang.String"/>
+    <field name="goodsType" class="java.lang.String"/>
+    <field name="actualPickUpDateAndTime" class="java.lang.String"/>
+    <field name="actualDropUpDateAndTime" class="java.lang.String"/>
+    <field name="totalDuration" class="java.lang.String"/>
+    <field name="tripStatus" class="java.lang.String"/>
+    <background>
+        <band/>
+    </background>
+    <title>
+        <band height="72">
+            <frame>
+                <reportElement mode="Opaque" x="0" y="-20" width="2880" height="92" backcolor="#006699" />
+                <staticText>
+                    <reportElement x="20" y="20" width="410" height="43" forecolor="#FFFFFF" />
+                    <textElement>
+                        <font size="34" isBold="true"/>
+                    </textElement>
+                    <text><![CDATA[MASTER REPORT]]></text>
+                </staticText>
+            </frame>
+        </band>
+    </title>
+    <columnHeader>
+        <band height="44">
+            <line>
+                <reportElement x="0" y="43" width="2880" height="1" forecolor="#666666" />
+            </line>
+            <staticText>
+                <reportElement x="0" y="13" width="60" height="30" />
+                <textElement textAlignment="Center" verticalAlignment="Middle"/>
+                <text><![CDATA[Indent Id]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="60" y="13" width="90" height="30" />
+                <textElement textAlignment="Center" verticalAlignment="Middle"/>
+                <text><![CDATA[TRIP ID]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="150" y="13" width="70" height="30" />
+                <textElement textAlignment="Center" verticalAlignment="Middle"/>
+                <text><![CDATA[Order Type]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="220" y="13" width="70" height="30" />
+                <textElement textAlignment="Center" verticalAlignment="Middle"/>
+                <text><![CDATA[Contract Type]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="290" y="13" width="90" height="30" />
+                <textElement textAlignment="Center" verticalAlignment="Middle"/>
+                <text><![CDATA[CREATED DATE & TIME]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="380" y="13" width="100" height="30" />
+                <textElement textAlignment="Center" verticalAlignment="Middle"/>
+                <text><![CDATA[Transporter Name]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="480" y="13" width="100" height="30" />
+                <textElement textAlignment="Center" verticalAlignment="Middle"/>
+                <text><![CDATA[VEHICLE NUMBER]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="580" y="13" width="90" height="30" />
+                <textElement textAlignment="Center" verticalAlignment="Middle"/>
+                <text><![CDATA[VEHICLE TYPE]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="670" y="13" width="90" height="30" />
+                <textElement textAlignment="Center" verticalAlignment="Middle"/>
+                <text><![CDATA[DRIVER NAME]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="760" y="13" width="110" height="30" />
+                <textElement textAlignment="Center" verticalAlignment="Middle"/>
+                <text><![CDATA[DRIVER MOBILE No.]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="870" y="13" width="270" height="30" />
+                <textElement textAlignment="Center" verticalAlignment="Middle"/>
+                <text><![CDATA[PICKUP LOCATION]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="1140" y="13" width="260" height="30" />
+                <textElement textAlignment="Center" verticalAlignment="Middle">
+                    <font isBold="false"/>
+                </textElement>
+                <text><![CDATA[DROPOFF LOCATION]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="1400" y="14" width="100" height="30" />
+                <textElement textAlignment="Center" verticalAlignment="Middle">
+                    <font isBold="false"/>
+                </textElement>
+                <text><![CDATA[PLANNED PICKUP DATE & TIME]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="1500" y="13" width="100" height="30" />
+                <textElement textAlignment="Center" verticalAlignment="Middle"/>
+                <text><![CDATA[PLANNEDDROPOFF DATE & TIME]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="1600" y="13" width="100" height="30" />
+                <textElement textAlignment="Center" verticalAlignment="Middle"/>
+                <text><![CDATA[Planned Weight ]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="1700" y="14" width="100" height="30" />
+                <textElement textAlignment="Center" verticalAlignment="Middle"/>
+                <text><![CDATA[Planned Volume]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="1800" y="14" width="100" height="30" />
+                <textElement textAlignment="Center" verticalAlignment="Middle"/>
+                <text><![CDATA[Planned No. Of Packages]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="1900" y="14" width="100" height="30" />
+                <textElement textAlignment="Center" verticalAlignment="Middle"/>
+                <text><![CDATA[Actual Weight]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="2000" y="14" width="100" height="30" />
+                <textElement textAlignment="Center" verticalAlignment="Middle"/>
+                <text><![CDATA[Actual Volume]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="2100" y="13" width="100" height="30" />
+                <textElement textAlignment="Center" verticalAlignment="Middle"/>
+                <text><![CDATA[Actual No. Of Packages]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="2200" y="14" width="100" height="30" />
+                <textElement textAlignment="Center" verticalAlignment="Middle"/>
+                <text><![CDATA[LR Number]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="2300" y="14" width="100" height="30" />
+                <textElement textAlignment="Center" verticalAlignment="Middle"/>
+                <text><![CDATA[LR Time]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="2400" y="13" width="100" height="30" />
+                <textElement textAlignment="Center" verticalAlignment="Middle"/>
+                <text><![CDATA[GOODS TYPE]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="2500" y="14" width="100" height="30" />
+                <textElement textAlignment="Center" verticalAlignment="Middle"/>
+                <text><![CDATA[ACTUAL PICKUP DATE & TIME]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="2600" y="14" width="100" height="30" />
+                <textElement textAlignment="Center" verticalAlignment="Middle"/>
+                <text><![CDATA[ACTUAL DROPOFF DATE & TIME]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="2700" y="14" width="100" height="30" />
+                <textElement textAlignment="Center" verticalAlignment="Middle"/>
+                <text><![CDATA[Total Duration]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="2800" y="14" width="80" height="30" />
+                <textElement textAlignment="Center" verticalAlignment="Middle"/>
+                <text><![CDATA[TRIP STATUS]]></text>
+            </staticText>
+        </band>
+    </columnHeader>
+    <detail>
+        <band height="49">
+            <textField  >
+                <reportElement stretchType="RelativeToTallestObject" x="0" y="0" width="60" height="20" />
+                <box leftPadding="3"/>
+                <textElement textAlignment="Left" verticalAlignment="Middle">
+                    <font size="10"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$F{indentId}]]></textFieldExpression>
+            </textField>
+            <textField  >
+                <reportElement stretchType="RelativeToTallestObject" x="60" y="0" width="90" height="20" />
+                <box leftPadding="5"/>
+                <textElement verticalAlignment="Middle">
+                    <font size="10"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$F{tripId}]]></textFieldExpression>
+            </textField>
+            <textField  >
+                <reportElement stretchType="RelativeToTallestObject" x="150" y="0" width="70" height="20" />
+                <box leftPadding="5"/>
+                <textElement verticalAlignment="Middle">
+                    <font size="10"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$F{orderType}]]></textFieldExpression>
+            </textField>
+            <textField  >
+                <reportElement stretchType="RelativeToTallestObject" x="220" y="0" width="70" height="20" />
+                <box leftPadding="5"/>
+                <textElement verticalAlignment="Middle">
+                    <font size="10"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$F{contractType}]]></textFieldExpression>
+            </textField>
+            <textField  >
+                <reportElement stretchType="RelativeToTallestObject" x="290" y="0" width="90" height="20" />
+                <box leftPadding="5"/>
+                <textElement verticalAlignment="Middle">
+                    <font size="10"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$F{createdTime}]]></textFieldExpression>
+            </textField>
+            <textField  >
+                <reportElement stretchType="RelativeToTallestObject" x="380" y="0" width="100" height="20" />
+                <box leftPadding="5"/>
+                <textElement textAlignment="Left" verticalAlignment="Middle">
+                    <font size="10"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$F{transporterName}]]></textFieldExpression>
+            </textField>
+            <textField  >
+                <reportElement stretchType="RelativeToTallestObject" x="480" y="0" width="100" height="20" />
+                <box leftPadding="5"/>
+                <textElement verticalAlignment="Middle">
+                    <font size="10"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$F{vehicleNumber}]]></textFieldExpression>
+            </textField>
+            <textField  >
+                <reportElement stretchType="RelativeToTallestObject" x="580" y="-1" width="90" height="20" />
+                <box leftPadding="5"/>
+                <textElement verticalAlignment="Middle">
+                    <font size="10"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$F{vehicleType}]]></textFieldExpression>
+            </textField>
+            <textField  >
+                <reportElement stretchType="RelativeToTallestObject" x="670" y="0" width="90" height="20" />
+                <box leftPadding="5"/>
+                <textElement verticalAlignment="Middle">
+                    <font size="10"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$F{driverName}]]></textFieldExpression>
+            </textField>
+            <textField  >
+                <reportElement stretchType="RelativeToTallestObject" x="760" y="0" width="110" height="20" />
+                <box leftPadding="5"/>
+                <textElement verticalAlignment="Middle">
+                    <font size="10"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$F{driverNumber}]]></textFieldExpression>
+            </textField>
+            <textField  >
+                <reportElement stretchType="RelativeToTallestObject" x="870" y="0" width="270" height="20" />
+                <box leftPadding="5"/>
+                <textElement verticalAlignment="Middle">
+                    <font size="10"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$F{pickUpLocation}]]></textFieldExpression>
+            </textField>
+            <textField  >
+                <reportElement stretchType="RelativeToTallestObject" x="1140" y="0" width="260" height="20" />
+                <box leftPadding="5"/>
+                <textElement verticalAlignment="Middle">
+                    <font size="10"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$F{dropLocation}]]></textFieldExpression>
+            </textField>
+            <textField  >
+                <reportElement stretchType="RelativeToTallestObject" x="1400" y="0" width="100" height="20" />
+                <box leftPadding="5"/>
+                <textElement verticalAlignment="Middle">
+                    <font size="10"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$F{plannedPickUpDateAndTime}]]></textFieldExpression>
+            </textField>
+            <textField  >
+                <reportElement stretchType="RelativeToTallestObject" x="1500" y="-1" width="100" height="20" />
+                <box leftPadding="5"/>
+                <textElement verticalAlignment="Middle">
+                    <font size="10"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$F{plannedDropDateAndTime}]]></textFieldExpression>
+            </textField>
+            <textField  >
+                <reportElement stretchType="RelativeToTallestObject" x="1600" y="0" width="100" height="20" />
+                <box leftPadding="5"/>
+                <textElement verticalAlignment="Middle">
+                    <font size="10"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$F{plannedWeight}]]></textFieldExpression>
+            </textField>
+            <textField  >
+                <reportElement stretchType="RelativeToTallestObject" x="1700" y="0" width="100" height="20" />
+                <box leftPadding="5"/>
+                <textElement verticalAlignment="Middle">
+                    <font size="10"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$F{plannedVolume}]]></textFieldExpression>
+            </textField>
+            <textField  >
+                <reportElement stretchType="RelativeToTallestObject" x="1810" y="0" width="90" height="20" />
+                <box leftPadding="5"/>
+                <textElement verticalAlignment="Middle">
+                    <font size="10"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$F{plannedNoOfPKGS}]]></textFieldExpression>
+            </textField>
+            <textField  >
+                <reportElement stretchType="RelativeToTallestObject" x="1900" y="0" width="100" height="20" />
+                <box leftPadding="5"/>
+                <textElement verticalAlignment="Middle">
+                    <font size="10"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$F{actualWeight}]]></textFieldExpression>
+            </textField>
+            <textField  >
+                <reportElement stretchType="RelativeToTallestObject" x="2000" y="0" width="100" height="20" />
+                <box leftPadding="5"/>
+                <textElement verticalAlignment="Middle">
+                    <font size="10"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$F{actualVolume}]]></textFieldExpression>
+            </textField>
+            <textField  >
+                <reportElement stretchType="RelativeToTallestObject" x="2100" y="0" width="100" height="20" />
+                <box leftPadding="5"/>
+                <textElement verticalAlignment="Middle">
+                    <font size="10"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$F{actualNoOfPKGS}]]></textFieldExpression>
+            </textField>
+            <textField  >
+                <reportElement stretchType="RelativeToTallestObject" x="2200" y="0" width="100" height="20" />
+                <box leftPadding="5"/>
+                <textElement verticalAlignment="Middle">
+                    <font size="10"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$F{lrNumber}]]></textFieldExpression>
+            </textField>
+            <textField  >
+                <reportElement stretchType="RelativeToTallestObject" x="2300" y="0" width="100" height="20" />
+                <box leftPadding="5"/>
+                <textElement verticalAlignment="Middle">
+                    <font size="10"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$F{lrTime}]]></textFieldExpression>
+            </textField>
+            <textField  >
+                <reportElement stretchType="RelativeToTallestObject" x="2400" y="-1" width="100" height="20" />
+                <box leftPadding="5"/>
+                <textElement verticalAlignment="Middle">
+                    <font size="10"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$F{goodsType}]]></textFieldExpression>
+            </textField>
+            <textField  >
+                <reportElement stretchType="RelativeToTallestObject" x="2500" y="0" width="100" height="20" />
+                <box leftPadding="5"/>
+                <textElement verticalAlignment="Middle">
+                    <font size="10"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$F{actualPickUpDateAndTime}]]></textFieldExpression>
+            </textField>
+            <textField  >
+                <reportElement stretchType="RelativeToTallestObject" x="2600" y="0" width="100" height="20" />
+                <box leftPadding="5"/>
+                <textElement verticalAlignment="Middle">
+                    <font size="10"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$F{actualDropUpDateAndTime}]]></textFieldExpression>
+            </textField>
+            <textField  >
+                <reportElement stretchType="RelativeToTallestObject" x="2700" y="0" width="100" height="20" />
+                <box leftPadding="5"/>
+                <textElement verticalAlignment="Middle">
+                    <font size="10"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$F{totalDuration}]]></textFieldExpression>
+            </textField>
+            <textField  >
+                <reportElement stretchType="RelativeToTallestObject" x="2800" y="-1" width="80" height="20" />
+                <box leftPadding="5"/>
+                <textElement verticalAlignment="Middle">
+                    <font size="10"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$F{tripStatus}]]></textFieldExpression>
+            </textField>
+        </band>
+    </detail>
+    <pageFooter>
+        <band height="50">
+            <line>
+                <reportElement positionType="FixRelativeToBottom" x="0" y="0" width="2880" height="1" />
+            </line>
+        </band>
+    </pageFooter>
+</jasperReport>

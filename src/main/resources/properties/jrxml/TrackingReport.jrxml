@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.19.1.final using JasperReports Library version 6.19.1-867c00bf88cd4d784d404379d6c05e1b419e8a4c  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Simple_Blue" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20">
+
+
+    <field name="tripId" class="java.lang.String">
+    </field>
+    <field name="createdTime" class="java.lang.String">
+    </field>
+    <field name="pickUpLocation" class="java.lang.String">
+    </field>
+    <field name="dropLocation" class="java.lang.String">
+    </field>
+    <field name="vehicleNumber" class="java.lang.String">
+    </field>
+    <field name="vehicleType" class="java.lang.String">
+    </field>
+    <field name="driverName" class="java.lang.String">
+    </field>
+    <field name="driverNumber" class="java.lang.String">
+    </field>
+    <field name="tripStatus" class="java.lang.String">
+    </field>
+    <field name="startTime" class="java.lang.String">
+    </field>
+    <field name="endTime" class="java.lang.String">
+    </field>
+    <field name="totalDuration" class="java.lang.String">
+    </field>
+
+    <background>
+        <band/>
+    </background>
+    <title>
+        <band height="72">
+            <frame>
+                <reportElement mode="Opaque" x="-20" y="-20" width="595" height="92" backcolor="#006699" />
+                <staticText>
+                    <reportElement x="20" y="20" width="234" height="43" forecolor="#FFFFFF"/>
+                    <textElement>
+                        <font size="34" isBold="true"/>
+                    </textElement>
+                    <text><![CDATA[Tracking Report]]></text>
+                </staticText>
+                <staticText>
+                    <reportElement x="395" y="43" width="180" height="20" forecolor="#FFFFFF"/>
+                    <textElement textAlignment="Right">
+                        <font size="14" isBold="false"/>
+                    </textElement>
+                    <text><![CDATA[Tracking report details]]></text>
+                </staticText>
+            </frame>
+        </band>
+    </title>
+    <pageHeader>
+        <band height="13"/>
+    </pageHeader>
+    <columnHeader>
+        <band height="21">
+            <line>
+                <reportElement x="-20" y="20" width="595" height="1" forecolor="#666666" />
+            </line>
+            <staticText>
+                <reportElement mode="Opaque" x="0" y="0" width="55" height="20" forecolor="#006699" backcolor="#E6E6E6" >
+                    <property name="com.jaspersoft.studio.spreadsheet.connectionID" value="bca50a6b-f0a1-4dbe-b2cd-66a5e83b7f05"/>
+                </reportElement>
+                <textElement textAlignment="Center">
+                    <font size="14" isBold="true"/>
+                </textElement>
+                <text><![CDATA[tripId]]></text>
+            </staticText>
+            <staticText>
+                <reportElement mode="Opaque" x="55" y="0" width="55" height="20" forecolor="#006699" backcolor="#E6E6E6">
+                    <property name="com.jaspersoft.studio.spreadsheet.connectionID" value="c3e43084-2159-43b6-a026-6ebaef2d6929"/>
+                </reportElement>
+                <textElement textAlignment="Center">
+                    <font size="14" isBold="true"/>
+                </textElement>
+                <text><![CDATA[createdTime]]></text>
+            </staticText>
+            <staticText>
+                <reportElement mode="Opaque" x="110" y="0" width="55" height="20" forecolor="#006699" backcolor="#E6E6E6" >
+                    <property name="com.jaspersoft.studio.spreadsheet.connectionID" value="d88f6c56-7dcc-4fa9-83cc-aebfd49099bc"/>
+                </reportElement>
+                <textElement textAlignment="Center">
+                    <font size="14" isBold="true"/>
+                </textElement>
+                <text><![CDATA[pickUpLocation]]></text>
+            </staticText>
+            <staticText>
+                <reportElement mode="Opaque" x="165" y="0" width="55" height="20" forecolor="#006699" backcolor="#E6E6E6" >
+                    <property name="com.jaspersoft.studio.spreadsheet.connectionID" value="3191ebed-8052-4d92-864f-71854d664588"/>
+                </reportElement>
+                <textElement textAlignment="Center">
+                    <font size="14" isBold="true"/>
+                </textElement>
+                <text><![CDATA[dropLocation]]></text>
+            </staticText>
+            <staticText>
+                <reportElement mode="Opaque" x="220" y="0" width="55" height="20" forecolor="#006699" backcolor="#E6E6E6" >
+                    <property name="com.jaspersoft.studio.spreadsheet.connectionID" value="15161a6d-322d-4c11-b268-768bf16c27b5"/>
+                </reportElement>
+                <textElement textAlignment="Center">
+                    <font size="14" isBold="true"/>
+                </textElement>
+                <text><![CDATA[vehicleNumber]]></text>
+            </staticText>
+            <staticText>
+                <reportElement mode="Opaque" x="275" y="0" width="55" height="20" forecolor="#006699" backcolor="#E6E6E6" >
+                    <property name="com.jaspersoft.studio.spreadsheet.connectionID" value="b42987b9-5004-4f10-b6af-80096d2aebdc"/>
+                </reportElement>
+                <textElement textAlignment="Center">
+                    <font size="14" isBold="true"/>
+                </textElement>
+                <text><![CDATA[vehicleType]]></text>
+            </staticText>
+            <staticText>
+                <reportElement mode="Opaque" x="330" y="0" width="55" height="20" forecolor="#006699" backcolor="#E6E6E6" >
+                    <property name="com.jaspersoft.studio.spreadsheet.connectionID" value="422be2e0-f4c7-4991-86f8-33e26d134fb5"/>
+                </reportElement>
+                <textElement textAlignment="Center">
+                    <font size="14" isBold="true"/>
+                </textElement>
+                <text><![CDATA[driverName]]></text>
+            </staticText>
+            <staticText>
+                <reportElement mode="Opaque" x="385" y="0" width="55" height="20" forecolor="#006699" backcolor="#E6E6E6" >
+                    <property name="com.jaspersoft.studio.spreadsheet.connectionID" value="5a2fd97b-394a-49af-9f46-7cd5ff4481c1"/>
+                </reportElement>
+                <textElement textAlignment="Center">
+                    <font size="14" isBold="true"/>
+                </textElement>
+                <text><![CDATA[driverNumber]]></text>
+            </staticText>
+            <staticText>
+                <reportElement mode="Opaque" x="440" y="0" width="55" height="20" forecolor="#006699" backcolor="#E6E6E6" >
+                    <property name="com.jaspersoft.studio.spreadsheet.connectionID" value="06be9801-f50f-44f9-bf70-e7740a65968f"/>
+                </reportElement>
+                <textElement textAlignment="Center">
+                    <font size="14" isBold="true"/>
+                </textElement>
+                <text><![CDATA[tripStatus]]></text>
+            </staticText>
+            <staticText>
+                <reportElement mode="Opaque" x="495" y="0" width="55" height="20" forecolor="#006699" backcolor="#E6E6E6" >
+                    <property name="com.jaspersoft.studio.spreadsheet.connectionID" value="ff216933-09a9-4c57-9b3f-2af1dd84b16b"/>
+                </reportElement>
+                <textElement textAlignment="Center">
+                    <font size="14" isBold="true"/>
+                </textElement>
+                <text><![CDATA[startTime]]></text>
+            </staticText>
+        </band>
+    </columnHeader>
+    <detail>
+        <band height="20">
+            <line>
+                <reportElement positionType="FixRelativeToBottom" x="0" y="19" width="555" height="1"/>
+            </line>
+            <textField >
+                <reportElement x="0" y="0" width="55" height="20" >
+                    <property name="com.jaspersoft.studio.spreadsheet.connectionID" value="bca50a6b-f0a1-4dbe-b2cd-66a5e83b7f05"/>
+                </reportElement>
+                <textElement>
+                    <font size="14"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$F{tripId}]]></textFieldExpression>
+            </textField>
+            <textField >
+                <reportElement x="55" y="0" width="55" height="20" >
+                    <property name="com.jaspersoft.studio.spreadsheet.connectionID" value="c3e43084-2159-43b6-a026-6ebaef2d6929"/>
+                </reportElement>
+                <textElement>
+                    <font size="14"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$F{createdTime}]]></textFieldExpression>
+            </textField>
+            <textField >
+                <reportElement x="110" y="0" width="55" height="20" >
+                    <property name="com.jaspersoft.studio.spreadsheet.connectionID" value="d88f6c56-7dcc-4fa9-83cc-aebfd49099bc"/>
+                </reportElement>
+                <textElement>
+                    <font size="14"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$F{pickUpLocation}]]></textFieldExpression>
+            </textField>
+            <textField >
+                <reportElement x="165" y="0" width="55" height="20" >
+                    <property name="com.jaspersoft.studio.spreadsheet.connectionID" value="3191ebed-8052-4d92-864f-71854d664588"/>
+                </reportElement>
+                <textElement>
+                    <font size="14"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$F{dropLocation}]]></textFieldExpression>
+            </textField>
+            <textField >
+                <reportElement x="220" y="0" width="55" height="20" >
+                    <property name="com.jaspersoft.studio.spreadsheet.connectionID" value="15161a6d-322d-4c11-b268-768bf16c27b5"/>
+                </reportElement>
+                <textElement>
+                    <font size="14"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$F{vehicleNumber}]]></textFieldExpression>
+            </textField>
+            <textField >
+                <reportElement x="275" y="0" width="55" height="20" >
+                    <property name="com.jaspersoft.studio.spreadsheet.connectionID" value="b42987b9-5004-4f10-b6af-80096d2aebdc"/>
+                </reportElement>
+                <textElement>
+                    <font size="14"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$F{vehicleType}]]></textFieldExpression>
+            </textField>
+            <textField >
+                <reportElement x="330" y="0" width="55" height="20" >
+                    <property name="com.jaspersoft.studio.spreadsheet.connectionID" value="422be2e0-f4c7-4991-86f8-33e26d134fb5"/>
+                </reportElement>
+                <textElement>
+                    <font size="14"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$F{driverName}]]></textFieldExpression>
+            </textField>
+            <textField >
+                <reportElement x="385" y="0" width="55" height="20" >
+                    <property name="com.jaspersoft.studio.spreadsheet.connectionID" value="5a2fd97b-394a-49af-9f46-7cd5ff4481c1"/>
+                </reportElement>
+                <textElement>
+                    <font size="14"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$F{driverNumber}]]></textFieldExpression>
+            </textField>
+            <textField >
+                <reportElement x="440" y="0" width="55" height="20" >
+                    <property name="com.jaspersoft.studio.spreadsheet.connectionID" value="06be9801-f50f-44f9-bf70-e7740a65968f"/>
+                </reportElement>
+                <textElement>
+                    <font size="14"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$F{tripStatus}]]></textFieldExpression>
+            </textField>
+            <textField >
+                <reportElement x="495" y="0" width="55" height="20" >
+                    <property name="com.jaspersoft.studio.spreadsheet.connectionID" value="ff216933-09a9-4c57-9b3f-2af1dd84b16b"/>
+                </reportElement>
+                <textElement>
+                    <font size="14"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$F{startTime}]]></textFieldExpression>
+            </textField>
+        </band>
+    </detail>
+    <columnFooter>
+        <band/>
+    </columnFooter>
+    <pageFooter>
+        <band height="17">
+            <textField>
+                <reportElement mode="Opaque" x="0" y="4" width="515" height="13" backcolor="#E6E6E6" />
+                <textElement textAlignment="Right"/>
+                <textFieldExpression><![CDATA["Page "+$V{PAGE_NUMBER}+" of"]]></textFieldExpression>
+            </textField>
+            <textField evaluationTime="Report">
+                <reportElement mode="Opaque" x="515" y="4" width="40" height="13" backcolor="#E6E6E6"/>
+                <textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
+            </textField>
+        </band>
+    </pageFooter>
+    <summary>
+        <band/>
+    </summary>
+</jasperReport>
